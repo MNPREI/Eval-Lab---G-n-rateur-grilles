@@ -1,0 +1,5 @@
+{
+  "name": "Éval’Lab – Générateur de grilles d’évaluation",
+  "description": "Bot Éval’Lab – Générateur de grilles d’évaluation critériées\nIndiquez simplement le niveau, la discipline et la compétence à évaluer : l’outil génère une grille claire, alignée sur le socle commun, avec analyse didactique et propositions d’adaptations inclusives.",
+  "requestFramePermissions": []
+}
