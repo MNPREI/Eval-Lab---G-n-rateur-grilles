@@ -1,15 +1,10 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
-*/
-import {GoogleGenAI} from '@google/genai';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
 
-const ai = new GoogleGenAI({apiKey: process.env.GEMINI_API_KEY});
-
-const response = await ai.models.generateContentStream({
-  model: 'gemini-2.0-flash',
-  contents: 'hello?',
-});
-for await (const chunk of response) {
-  document.body.textContent += chunk.text;
-}
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
